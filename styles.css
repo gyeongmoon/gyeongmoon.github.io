@@ -1,23 +1,233 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #24252A;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%; /* top and bottom: 30px, right and left: 10% */
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif; /* font size can be set using 'link' in index.html. */
+
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    color: black;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 li, a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: rgb(15, 11, 241);
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(15, 11, 241);
+    transform-origin: middle middle;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.nav-links li a:hover::after {
+    transform-origin: middle middle;
+    transform: scale(1, 1);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 200%;
+        top: 75px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: royalblue;
+    padding-left: 5%;
+}
+
+h2 span {
+    background-color: rgba(170, 170, 170, 0.3);
+}
+
+p.p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: royalblue;
+    padding-left: 5%;
+}
+
+p.p1 span {
+    background-color: rgba(170, 170, 170, 0.3);
+}
+
+.banner-area {
+    position: relative;
+    background-image: url(images/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background-position: center center;
+    -webkit-background-size: cover;
+    color: black;
+    font-size: 25px;
+}
+
+.banner-area a {
+    font-family: 'Montserrat', sans-serif;
+    background: royalblue;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.about-area, .work-area, .projects-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    /* top: 10px; */
+}
+
+.text-part {
+    width: 65%;
+    height: 80%;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-area, .projects-area {
+    background: white;
+}
+
+.work-area {
+    background: whitesmoke;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
 }
