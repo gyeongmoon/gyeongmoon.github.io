@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-/* *[id]:before { 
-    display: block; 
-    content: ""; 
-    /* margin-top: -75px;
-    height: 75px;
-    visibility: hidden; 
-} */
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -92,12 +84,6 @@ nav {
     background-color: rgb(226, 226, 226);
     margin: 5px;
     transition: all 0.3s ease;
-}
-
-@media screen and (max-width:1024px) {
-    .nav-links {
-        width: 60%;
-    }
 }
 
 @media screen and (max-width:1000px) {
@@ -203,11 +189,14 @@ html {
 }
 
 /* About area */
+section {
+    margin-bottom: 5%;
+}
 .section-title {
     text-transform: uppercase;
     font-size: 40px;
     /* margin-top: 5%; */
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     font-weight: bold;
 }
 
@@ -238,37 +227,47 @@ section p {
     font-family: 'Montserrat', sans-serif;
 }
 
+section p span {
+    display: block;
+}
+
 section ul li {
     list-style: none;
 }
 
-ul.about-content {
-    width:100%;
+.about-content {
+    width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
 }
 
-.about-content li {
+.about-content .about-link {
+    color: rgb(20, 73, 220);
+    font-weight: bold;
+}
+
+.about-right {
     padding: 20px;
-    height: 500px;
+}
+
+.about-left {
+    padding: 20px;
+    height: 600px;
+    width: 420px;
     background-clip: content-box;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
 }
 
-.about-left {
-    flex-basis: 40%;
+.about-left { /* figure */
+    /* flex-basis: 40%; */
     background-image: url(images/1.jpg);
-}
-
-.about-right {
-    flex-basis: 60%;
 }
 
 .about-right h3 {
@@ -278,28 +277,124 @@ ul.about-content {
 }
 
 .about-area p {
-    max-width: 800px;
+    max-width: 690px;
     margin-bottom: 35px;
-    line-height: 25px;
-    text-align: left;
+    line-height: 30px;
+    text-align: justify;
     padding-left: 0;
+}
+
+.about-cv {
+    padding: 15px 35px;
+    /* background: rgb(20, 73, 220); */
+    background: crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-btn {
     padding: 15px 35px;
+    /* background: rgb(20, 73, 220); */
     background: crimson;
     border-radius: 50px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social {
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.social a {
+    /* color: rgb(20, 73, 220); */
+    color: crimson;
+}
+
+.about-google-scholar {
+    padding-right: 5px;
 }
 
 @media (max-width: 1000px) {
-    .about-left,
-    .about-right {
-        flex-basis: 100%;
+    .about-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .about-content li {
-        padding: 8px;
+    .about-left {
+        height: 500px;
+        max-width: 730px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .about-right {
+        width: 100%;
+    }
+}
+
+/* Education */
+.about-education, .about-positions,
+.about-teaching {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+hr {
+    margin-top: 5px;
+    border-top: 1px solid gray;
+    width: 101%;
+}
+
+.about-header h5::before {
+    content: '|';
+    color: crimson;
+    padding-right: 10px;
+}
+
+.about-header h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    padding-top: 18px;
+    padding-right: 60px;
+}
+
+.about-resume-main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    max-width: 540px;
+}
+
+@media (max-width: 800px) {
+    .about-education, .about-positions,
+    .about-teaching {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    hr {
+        visibility: hidden;
     }
 }
 
@@ -469,7 +564,7 @@ ul.publications-content {
     background: #111;
     color: white;
     line-height: 75px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Montserrat', sans-serif;
 }
 

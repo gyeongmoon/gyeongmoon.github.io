@@ -1,83 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gyeong-Moon Park @ KAIST </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type='text/css'>
-    @-ms-viewport{width:device-width;}
-    @-o-viewport{width:device-width;}
-    @viewport{width:device-width;}
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <nav>
-        <div class="logo">
-            <a class="navbar-brand" href="index.html">GMPARK</a>
-            <!-- <h4>GMPARK</h4> -->
-        </div>
-        <ul class="nav-links">  <!-- ul: unordered list -->
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gyeong-Moon Park @ KAIST </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type='text/css'>
+    @-ms-viewport {
+      width: device-width;
+    }
+
+    @-o-viewport {
+      width: device-width;
+    }
+
+    @viewport {
+      width: device-width;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a class="navbar-brand" href="index.html">GMPARK</a>
+    </div>
+    <ul class="nav-links">
+      <!-- ul: unordered list -->
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <script src="app.js"></script>
+
+  <div class="banner-area" id="home">
+    <div>
+      <h2><span>Gyeong-Moon Park</span></h2>
+      <p class="p1"><span>Postdoctoral Researcher at KAIST.</span></p>
+      <a href="#about">About Me</a>
+    </div>
+  </div>
+  <section class="about-area" id="about">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content">
+      <div class="about-left"></div>
+      <div class="about-right">
+        <h3>Gyeong-Moon Park, Ph.D.</h3>
+        <p>
+          <span>
+            I am Postdoctoral Researcher in Information & Electronics Research Institute at <a class="about-link"
+              href="https://www.kaist.ac.kr/html/en/index.html">KAIST</a>. I received the B.S. degree in electronic and
+            electrical engineering from <a class="about-link" href="https://www.skku.edu/eng/">Sungkyunkwan
+              University</a>, Suwon, Korea in 2014, and the M.S. and Ph.D. degrees in electrical engineering from <a
+              class="about-link" href="https://www.kaist.ac.kr/html/en/index.html">KAIST</a>, Daejeon, Korea in 2016 and
+            2019, respectively. My research interests include autonomous robots, online incremental learning, continual
+            learning, and reinforcement learning.
+          </span>
+        </p>
+        <h3>Contact Information</h3>
+        <p>
+          <span>Room #3238, E3-2 Building, School of Electrical Engineering</span>
+          <span>Korea Advanced Institute of Science and Technology (KAIST)</span>
+          <span>291 Daehak-ro, Yuseong-gu, Daejeon, 34141, Republic of Korea</span>
+          <span><b>Email</b>: <a href="mailto:gmpark@rit.kaist.ac.kr"><u>gmpark@rit.kaist.ac.kr</u></a></span>
+          <span><b>Web</b>: <a href="https://gyeongmoon.github.io"><u>https://gyeongmoon.github.io</u></a></span>
+        </p>
+        <a href="resources/CV_gmpark.pdf" class="about-cv"><i class="fa fa-download"></i>&nbsp Download C.V.</a>
+        <a href="mailto:gmpark@rit.kaist.ac.kr" class="about-btn">Contact</a>
+        <ul class="social">
+          <!-- <a href="https://www.facebook.com/yowoou"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/yowoou"><i class="fa fa-linkedin"></i></a> -->
+          <a href="https://scholar.google.com/citations?user=Sz6rfOMAAAAJ&hl=en" class="about-google-scholar"><i
+              class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/gyeongmoon" class="about-github"><i class="fa fa-github"></i></a>
         </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-    </nav>
-
-    <script src="app.js"></script>
-
-    <div class="banner-area" id="home">
-      <div>
-        <h2><span>Gyeong-Moon Park</span></h2>
-        <p class="p1"><span>Postdoctoral Researcher at KAIST.</span></p>
-        <a href="#about">About Me</a>
       </div>
     </div>
-    <section class="about-area" id="about">
-      <h1 class="section-title">About Me</h1>
-      <ul class="about-content">
-        <li class="about-left"></li>
-        <li class="about-right">
-          <h3>Gyeong-Moon Park, Ph.D.</h3>
-          <p>Hello! I'm Gyeong-Moon Park, postdoctoral researcher at KAIST in Republic of Korea.</p>
-          <a href="" class="about-btn">Learn more</a>
-        </li>
-      </ul>
-    </section>
 
-    <section class="publications-area" id="publications">
-        <h1 class="section-title">Publications</h1>
-        <ul class="publications-content">
-            <li>
-              <i class="fa fa-laptop"></i>
-              <h3>Journal Papers</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
-            </li>
-            <li>
-              <i class="fa fa-signal"></i>
-              <h3>Conference Papers</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
-            </li>
-            <li>
-              <i class="fa fa-picture-o"></i>
-              <h3>Patents</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
-            </li>
-        </ul>
-    </section>
-    <footer>
-      <!-- <div class="footer-top">
+    <div class="about-education">
+      <div class="about-header">
+        <hr><h5><span>Education</span></h5>
+      </div>
+
+      <div class="about-resume-main">
+        <div class="phd">
+          <hr><p class="info">
+            <span><b>KAIST</b>, Daejeon, Republic of Korea</span>
+            <span>Ph.D. in School of Electrical Engineering, &nbsp;&nbsp;<em class="date">Aug. 2019</em></span>
+            <span>Thesis: "Memory-based Continual Learning for Autonomous Intelligent Agent"</span>
+            <span>Advisor: <I>Prof.</I> Jong-Hwan Kim</span>
+          </p>
+        </div>
+        <div class="ms">
+          <p class="info">
+            <span><b>KAIST</b>, Daejeon, Republic of Korea</span>
+            <span>M.S. in School of Electrical Engineering, &nbsp;&nbsp;<em class="date">Feb. 2016</em></span>
+            <span>Thesis: "Deep ART Memory Based Cognitive Architecture for Robots"</span>
+            <span>Advisor: <I>Prof.</I> Jong-Hwan Kim</span>
+          </p>
+        </div>
+        <div class="bs">
+          <p class="info">
+            <span><b>Sungkyunkwan University</b>, Suwon, Republic of Korea</span>
+            <span>B.S. in Electronic and Electrical Engineering, &nbsp;&nbsp;<em class="date">Feb. 2014</em></span>
+            <span>Thesis: "The Enhancement of Light Extraction Efficiency of Blue-LED by Using Double Layer Photonic Crystals"</span>
+            <span>Advisor: <I>Prof.</I> Bong-Shik Song</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-positions">
+      <div class="about-header">
+        <hr><h5><span>Positions</span></h5>
+      </div>
+
+      <div class="about-resume-main">
+        <div class="postdoc">
+          <hr><p class="info">
+            <span><b>KAIST</b>, Daejeon, Republic of Korea</span>
+            <span>Postdoctoral Researcher in Information & Electronics Research Institute, &nbsp;&nbsp;<em class="date">Aug. 2019 - Present</em></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="about-interests">
+      <div class="about-header">
+        <hr><h5><span>Interests</span></h5>
+      </div>
+
+      <div class="about-resume-main">
+        <div class="interests">
+          <hr><p class="info">
+            <span><b>Machine Learning</b></span>
+            <span>Long-Term Memory, Unsupervised Learning (Clustering), Incremental Learning, Continual Learning, Transfer Learning, Computer Vision, Deep Reinforcement Learning</span>
+          </p>
+        </div>
+        <div class="interests">
+          <p class="info">
+            <span><b>Robotics</b></span>
+            <span>Long-Term Memory, Unsupervised Learning (Clustering), Incremental Learning, Continual Learning, Transfer Learning, Computer Vision, Deep Reinforcement Learning</span>
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="about-teaching">
+      <div class="about-header">
+        <hr><h5><span>Teaching</span></h5>
+      </div>
+
+      <div class="about-resume-main">
+        <div class="teaching">
+          <hr><p class="info">
+            <span><b>Teaching Assistant</b> at KAIST</span>
+            <span>&bull;&nbsp;EE212: “Electronics Design and Practice” (3-credits)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>&bull;&nbsp;EE381: “Control System Engineering” (3-credits)</span>
+            <span>&bull;&nbsp;EE490: “B.S. Thesis Research” (3-credits)</span>
+            <span>&bull;&nbsp;EE495: “Individual Study” (3-credits)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="publications-area" id="publications">
+    <h1 class="section-title">Publications</h1>
+    <ul class="publications-content">
+      <li>
+        <i class="fa fa-laptop"></i>
+        <h3>Journal Papers</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error
+          ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
+      </li>
+      <li>
+        <i class="fa fa-signal"></i>
+        <h3>Conference Papers</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error
+          ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
+      </li>
+      <li>
+        <i class="fa fa-picture-o"></i>
+        <h3>Patents</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex magnam, quae sunt, facere error
+          ratione quia, recusandae incidunt nisi quaerat quam corporis quod quas. Ad animi fugiat saepe commodi.</p>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <!-- <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30">
@@ -113,9 +239,10 @@
           </div>
         </div>
       </div> -->
-      <div>
-        <p class="footer-bottom-text">All Rights reserved by &copy;GMPARK</p>
-      </div>
-    </footer>
-  </body>
+    <div>
+      <p class="footer-bottom-text">All Rights reserved by &copy;GMPARK</p>
+    </div>
+  </footer>
+</body>
+
 </html>
