@@ -334,9 +334,12 @@ section ul li {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 467px) {
     .about-right {
         width: 100%;
+    }
+    .about-btn {
+        visibility: hidden;
     }
 }
 
@@ -396,6 +399,18 @@ hr {
     hr {
         visibility: hidden;
     }
+
+    .journal {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area-header {
+        padding-bottom: 15px;
+    }
 }
 
 /* Publications area */
@@ -412,7 +427,7 @@ hr {
     background: whitesmoke;
 }
 
-ul.publications-content {
+.journal {
     width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
@@ -423,7 +438,61 @@ ul.publications-content {
     justify-content: center;
 }
 
-.publications-content li {
+.area-header {
+    flex-basis: 30%;
+}
+
+.area-main {
+    flex-basis: 70%;
+}
+
+.area-header h5::before {
+    content: '|';
+    color: crimson;
+    padding-right: 10px;
+}
+
+.area-header h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    text-align: right;
+    text-transform: uppercase;
+    padding-top: 6px;
+    /* padding: 0px 30px; */
+    /* padding-top: 18px; */
+    /* padding-right: 60px; */
+}
+
+.numbering {
+    float: left;
+    width: 0;
+}
+
+.numbering p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.each-con {
+    float: left;
+    width: 100%;
+}
+
+.each-con p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 0;
+    max-width: 1200px;
+    margin-right: 10%;
+}
+
+/* .publications-content li {
     padding: 0 30px;
     flex-basis: 33%;
     text-align: center;
@@ -456,7 +525,7 @@ ul.publications-content {
     .publications-content li p {
         padding: 0;
     }
-}
+} */
 
 /* footer */
 /* .footer-top {
