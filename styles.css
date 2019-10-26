@@ -189,9 +189,6 @@ html {
 }
 
 /* About area */
-section {
-    margin-bottom: 5%;
-}
 .section-title {
     text-transform: uppercase;
     font-size: 40px;
@@ -400,7 +397,7 @@ hr {
         visibility: hidden;
     }
 
-    .journal {
+    .journal, .conference, .patents, .rProjects, .aServices, .servicesArea {
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -411,6 +408,34 @@ hr {
     .area-header {
         padding-bottom: 15px;
     }
+
+    .numbering p.info {
+        padding-left: 0;
+    }
+
+    .each-con p.info {
+        padding-left: 30px;
+        margin-right: 0;
+    }
+
+    .each-con-white p.info {
+        padding-left: 30px;
+        margin-right: 0;
+    }
+
+    .each-con-smoke p.info {
+        padding-left: 30px;
+        margin-right: 0;
+    }
+}
+
+.teaching::after {
+    display: block;
+    content: " ";
+    position: relative;
+    height: 50px;
+    background-color: white;
+    pointer-events: none;
 }
 
 /* Publications area */
@@ -427,7 +452,7 @@ hr {
     background: whitesmoke;
 }
 
-.journal {
+.journal, .conference, .patents, .rProjects, .aServices, .servicesArea {
     width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
@@ -477,7 +502,7 @@ hr {
     padding-left: 40px;
 }
 
-.each-con {
+.each-con, .each-con-white, .each-con-smoke {
     float: left;
     width: 100%;
 }
@@ -490,6 +515,71 @@ hr {
     padding-right: 0;
     max-width: 1200px;
     margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+.each-con-white p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 0;
+    max-width: 1200px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+.each-con-smoke p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 0;
+    max-width: 1200px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+.each-con-white::after {
+    display: block;
+    content: " ";
+    position: relative;
+    height: 50px;
+    background-color: white;
+    pointer-events: none;
+}
+
+.each-con-smoke::after {
+    display: block;
+    content: " ";
+    position: relative;
+    height: 50px;
+    background-color: whitesmoke;
+    pointer-events: none;
+}
+
+/* Projects area */
+.projects-area h1::before {
+    display: block;
+    content: " ";
+    position: relative;
+    height: 75px;
+    background-color: white;
+    pointer-events: none;
+}
+
+/* Services area */
+.services-area h1::before {
+    display: block;
+    content: " ";
+    position: relative;
+    height: 75px;
+    background-color: whitesmoke;
+    pointer-events: none;
+}
+
+.services-area {
+    background: whitesmoke;
 }
 
 /* .publications-content li {
