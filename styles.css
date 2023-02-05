@@ -404,7 +404,7 @@ hr {
 }
 
 .info-t {
-    padding-right: 146px;
+    padding-right: 100px; /*146*/
 }
 
 @media (max-width: 800px) {
