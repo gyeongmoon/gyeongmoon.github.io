@@ -248,7 +248,7 @@ section ul li {
 }
 
 .about-content .about-link {
-    color: rgb(20, 73, 220);
+    color: /*rgb(20, 73, 220);*/crimson;
     font-weight: bold;
 }
 
